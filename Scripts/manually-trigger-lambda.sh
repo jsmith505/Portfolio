@@ -1,0 +1,1 @@
+aws lambda invoke --function-name <YOUR LAMBDA FUNCTION NAME> --payload '{}' output.txt

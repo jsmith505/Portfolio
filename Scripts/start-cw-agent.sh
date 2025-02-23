@@ -1,0 +1,1 @@
+sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -s -c file:cw-agent-config.json
