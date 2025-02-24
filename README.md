@@ -16,19 +16,19 @@ Welcome to my GitHub portfolio! I'm a **Cloud Engineer** with hands-on experienc
 
 ## 📂 Featured Projects  
 
-### 🔹 [AWS Infrastructure as Code](https://github.com/jsmith505/Portfolio/tree/main/Projects/Infrastructure-Automation)  
+### 🔹 [AWS Infrastructure as Code](https://github.com/jsmith505/Portfolio/tree/main/Projects/AWS%20Infrastructure%20as%20Code)  
 - Provisioning AWS resources using **Terraform** and **CloudFormation**  
 - Automating deployments with **AWS CDK**  
 
-### 🔹 [Monitoring & Incident Response](https://github.com/jsmith505/Portfolio/tree/main/Projects/Cloud-Monitoring)  
+### 🔹 [Monitoring & Incident Response](https://github.com/jsmith505/Portfolio/tree/main/Projects/Monitoring%20%26%20Incident%20Response)  
 - Custom **CloudWatch** metrics & alerts  
 - **Prometheus & Grafana** dashboards for real-time monitoring  
 
-### 🔹 [CI/CD Pipelines](https://github.com/jsmith505/Portfolio/tree/main/Projects/CI-CD-Pipeline)  
+### 🔹 [CI/CD Pipelines](https://github.com/jsmith505/Portfolio/tree/main/Projects/CICD%20Pipelines)  
 - End-to-end **CI/CD automation** using **GitHub Actions** and **AWS CodePipeline**  
 - Secure secrets management with **AWS Secrets Manager**  
 
-### 🔹 [Cloud Security Best Practices](https://github.com/jsmith505/Portfolio/tree/main/Projects/Zero-Trust-Security)  
+### 🔹 [Cloud Security Best Practices](https://github.com/jsmith505/Portfolio/tree/main/Projects/Cloud%20Security%20Best%20Practices)  
 - Implementing **IAM least privilege policies**  
 - Automating **security compliance checks**  
 
