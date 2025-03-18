@@ -1,0 +1,31 @@
+{
+    "metrics": {
+      "append_dimensions": {
+        "InstanceId": "${aws:InstanceId}"
+      },
+      "metrics_collected": {
+        "cpu": {
+          "measurement": [
+            "cpu_usage_idle",
+            "cpu_usage_iowait"
+          ],
+          "metrics_collection_interval": 60
+        },
+        "disk": {
+          "measurement": [
+            "disk_used_percent",
+            "disk_free_percent"
+          ],
+          "metrics_collection_interval": 60
+        },
+        "mem": {
+          "measurement": [
+            "mem_used_percent",
+            "mem_free_percent"
+          ],
+          "metrics_collection_interval": 60
+        }
+      }
+    }
+  }
+  
