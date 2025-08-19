@@ -1,11 +1,11 @@
-# 📊 CloudOps Dashboard  
+# CloudOps Dashboard  
 
 A **full-stack monitoring dashboard** that visualizes server health, alerts, and key infrastructure metrics.  
 Built with **React, Node.js, Express, and Tailwind CSS**.  
 
 ---
 
-## 🚀 Features  
+## Features  
 - Real-time **server status** (Running / Stopped)  
 - **Critical & High severity alerts**  
 - Interactive **CPU, Memory, and Disk usage charts** using Recharts  
@@ -13,14 +13,14 @@ Built with **React, Node.js, Express, and Tailwind CSS**.
 
 ---
 
-## 🛠️ Tech Stack  
+## Tech Stack  
 - **Frontend:** React, Tailwind CSS, Recharts  
 - **Backend:** Node.js, Express  
 - **Data Source:** Mock REST API (easily replaceable with Prometheus, CloudWatch, or other sources)  
 
 ---
 
-## ⚙️ Setup & Installation  
+## Setup & Installation  
 
 ### 1. Clone the repository  
 ```bash
@@ -48,10 +48,10 @@ Runs the React app at http://localhost:5173
 
 Fetches data automatically from the backend
 
-📸 Screenshots
+Screenshots
 
 
-🔮 Future Enhancements
+Future Enhancements
 Authentication & role-based access control (RBAC)
 
 Live integration with Prometheus / Grafana / CloudWatch
@@ -60,7 +60,7 @@ Containerization with Docker & Kubernetes
 
 Deployment pipeline using GitHub Actions → AWS (ECS / EKS / Amplify)
 
-📂 Project Structure
+Project Structure
 csharp
 Copy
 Edit
