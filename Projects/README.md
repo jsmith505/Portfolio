@@ -9,9 +9,14 @@
 - Clean, modern, and **responsive UI** for cloud ops teams  
 ---
 ## Tech Stack  
-- **Frontend:** React, Tailwind CSS, Recharts  
-- **Backend:** Node.js, Express  
-- **Data Source:** Mock REST API (easily replaceable with Prometheus, CloudWatch, or other sources)  
+| Layer      | Tech                         |
+|------------|------------------------------|
+| Frontend   | React + TailwindCSS          |
+| Backend    | FastAPI or Node.js           |
+| Monitoring | Prometheus + Grafana         |
+| Cost Data  | AWS Cost Explorer + Azure API|
+| Infra      | Terraform + GitHub Actions   |
+| Auth (Bonus) | SSO (Google/Entra)         |
 ---
 ## CloudOps Dashboard
 <p align="center"><img width="825" height="1247" alt="image" src="https://github.com/user-attachments/assets/b92d6064-81b9-4c14-8eec-dd95f1792047" /></p>
