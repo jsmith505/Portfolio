@@ -1,10 +1,21 @@
-FROM python:3.11-slim
+# Use lightweight Node.js
+FROM node:18-alpine
 
+# Set working directory
 WORKDIR /app
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+# Copy package.json and lock file first (for caching)
+COPY package*.json ./
 
-COPY ./app ./app
+# Install dependencies
+RUN npm install --production
 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+# Copy the rest of the code
+COPY . .
+
+# Expose backend port
+EXPOSE 4000
+
+# Start the server
+CMD ["npm", "start"]
+
