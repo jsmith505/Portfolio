@@ -52,17 +52,28 @@ Fetches data automatically from the backend
 - /api/metrics → CPU, Memory, Disk metrics
 ---
 ## Project Sturcture
-  CloudOps-Dashboard/  
-│── backend/            # Node.js + Express mock API  
-│   ├── server.js  
-│   ├── routes/  
-│   └── data/  
-│  
-│── frontend/           # React + Tailwind UI  
-│   ├── src/  
-│   │   ├── App.tsx  
-│   │   ├── components/  
-│   │   └── pages/  
-│   └── public/  
-│  
-│── README.md           # Project documentation 
+metrics-dashboard/
+│── docker-compose.yml 
+│
+│── backend/ 
+│   ├── Dockerfile
+│   ├── package.json
+│   ├── server.js
+│   ├── routes/
+│   └── data/
+│
+│── frontend/
+│   ├── Dockerfile
+│   ├── package.json
+│   ├── vite.config.js
+│   └── src/
+│       ├── App.tsx
+│       ├── components/
+│       └── pages/
+│
+│── terraform/
+│   ├── main.tf
+│   ├── variables.tf
+│   └── outputs.tf
+│
+│── README.md 
