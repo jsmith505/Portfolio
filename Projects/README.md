@@ -49,6 +49,7 @@ Runs the React app at http://localhost:5173
 Fetches data automatically from the backend
 
 Screenshots
+<img width="2234" height="1248" alt="image" src="https://github.com/user-attachments/assets/1a88c195-2cd9-4ff7-8945-b3c61e2a6a6b" />
 
 
 Future Enhancements
