@@ -1,36 +1,31 @@
-# 🌩️ Cloud Engineer | AWS | DevOps | Automation | Security  
+# 🌩️ Cloud & Devops Engineer | Infrastructure | Automation | Security  
 
-Welcome to my GitHub portfolio! I'm a **Cloud Engineer** with hands-on experience designing, automating, and securing cloud environments. My expertise spans **AWS, Azure, DevOps, and security**, with a strong focus on **infrastructure automation, cloud cost optimization, monitoring, and incident response**.
+VERSATILE AND SELF-TAUGHT ENGINEER WITH A POWERFUL BLEND OF GRIT, REAL-WORLD PROBLEM-SOLVING, AND AUTOMATION TALENT. WITH A TRACK RECORD OF REBUILDING INFRASTRUCTURE UNDER PRESSURE AND LEARNING TOOLS ON THE FLY, I BRING BOTH RELIABILITY AND HUSTLE. NOT AFRAID TO TAKE OWNERSHIP IN MESSY ENVIRONMENTS, AND ALWAYS LOOKING FOR WAYS TO SIMPLIFY, SCRIPT, AND SCALE. I’M READY TO GROW, CONTRIBUTE, AND EARN MY PLACE WITH A TEAM THAT VALUES HANDS-ON SKILL AND A RELENTLESS DRIVE TO IMPROVE.
 
 ## 🚀 Skills & Technologies  
 
-**Cloud Platforms:** AWS (EC2, Lambda, RDS, S3, VPC, IAM, Route 53), Azure (VMs, Functions, AD, Storage Accounts)  
-**Infrastructure as Code (IaC):** Terraform, CloudFormation, AWS CDK, Ansible  
-**CI/CD & GitOps:** GitHub Actions, GitLab CI, AWS CodePipeline  
-**Scripting & Development:** Python, Bash, PowerShell, YAML, JSON, AWS CLI, Boto3  
-**Containers & Orchestration:** Docker, Kubernetes (EKS, AKS), Fargate  
-**Security & Compliance:** IAM, RBAC, KMS, Zero Trust, CIS Hardening, AWS Secrets Manager, HashiCorp Vault  
-**Monitoring & Incident Response:** CloudWatch, Prometheus, Grafana, ELK Stack, Datadog, PagerDuty  
-**Cloud Cost Optimization & Scalability:** Auto Scaling, Spot & Reserved Instances, Savings Plans, Compute Optimizer  
-**Resilience & Disaster Recovery:** Blue-Green Deployments, Canary Releases, Multi-Region Failover, Backup & Restore  
+**Cloud Platforms:** AWS, Azure 
+**Infrastructure as Code (IaC):** Terraform, CloudFormation, Bicep  
+**CI/CD & GitOps:** Git, GitHub Actions, AWS CodePipeline, Azure Pipelines  
+**Scripting & Development:** Python, Bash, PowerShell, Node.js
+**Containers & Orchestration:** Docker, Kubernetes, EKS, AKS, Fargate  
+**Monitoring & Incident Response:** Prometheus, Grafana, PagerDuty  
+**Cloud Cost Optimization & Scalability:** Reserved & spot instances, Right-sizing & performance tuning  
+**Resilience & Disaster Recovery:** Backup & restore, RPO/RTO testing 
 
-## 📂 Featured Projects  
+## 📂 Featured Project  
 
-### 🔹 [AWS Infrastructure as Code](https://github.com/jsmith505/Portfolio/tree/main/Projects/AWS%20Infrastructure%20as%20Code)  
-- Provisioning AWS resources using **Terraform** and **CloudFormation**  
-- Automating deployments with **AWS CDK**  
+### 🔹 [CloudOps Dashboard](./Projects/CloudOps-Dashboard/README.md)  
+A **full-stack monitoring dashboard** that tracks server health, alerts, and infrastructure metrics.  
 
-### 🔹 [Monitoring & Incident Response](https://github.com/jsmith505/Portfolio/tree/main/Projects/Monitoring%20%26%20Incident%20Response)  
-- Custom **CloudWatch** metrics & alerts  
-- **Prometheus & Grafana** dashboards for real-time monitoring  
-
-### 🔹 [CI/CD Pipelines](https://github.com/jsmith505/Portfolio/tree/main/Projects/CICD%20Pipelines)  
-- End-to-end **CI/CD automation** using **GitHub Actions** and **AWS CodePipeline**  
-- Secure secrets management with **AWS Secrets Manager**  
-
-### 🔹 [Cloud Security Best Practices](https://github.com/jsmith505/Portfolio/tree/main/Projects/Cloud%20Security%20Best%20Practices)  
-- Implementing **IAM least privilege policies**  
-- Automating **security compliance checks**  
+- **Frontend:** React + Tailwind CSS (responsive dashboard UI)  
+- **Backend:** Node.js + Express REST API  
+- **Metrics & Visualization:** Recharts for CPU, Memory, and Disk usage  
+- **Features:**  
+  - Real-time **server status** with clear Running/Stopped indicators  
+  - **Critical & High severity alerts**  
+  - Interactive **CPU, Memory, Disk charts**  
+  - Clean, modern, and extensible design for app support team  
 
 ---
 
