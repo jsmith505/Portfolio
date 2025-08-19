@@ -22,6 +22,8 @@
 <p align="center"><img width="825" height="1247" alt="image" src="https://github.com/user-attachments/assets/b92d6064-81b9-4c14-8eec-dd95f1792047" /></p>
 
 ## Setup & Installation
+```bash
+
 1. Clone the repository
 git clone https://github.com/jsmith505/Portfolio.git  
 cd Portfolio/Projects/CloudOps-Dashboard
@@ -30,24 +32,24 @@ cd backend
 npm install  
 npm start  
 Starts the API at http://localhost:4000
----
-**Endpoints:**
-- /api/servers → List of servers & statuses  
-- /api/alerts → Active alerts with severity  
-- /api/metrics → CPU, Memory, Disk metrics
----
 3. Frontend Setup
 cd frontend  
 npm install  
 npm run dev  
 Runs the React app at http://localhost:5173  
-Fetches data automatically from the backend  
+Fetches data automatically from the backend   
+```
 ---
 ## Future Enhancements
 - Authentication & role-based access control (RBAC)  
 - Live integration with Prometheus / Grafana / CloudWatch  
 - Containerization with Docker & Kubernetes  
 - Deployment pipeline using GitHub Actions → AWS (ECS / EKS / Amplify)  
+---
+**Endpoints:**
+- /api/servers → List of servers & statuses  
+- /api/alerts → Active alerts with severity  
+- /api/metrics → CPU, Memory, Disk metrics
 ---
 ## Project Sturcture
   CloudOps-Dashboard/  
