@@ -12,7 +12,7 @@
 - **Frontend:** React, Tailwind CSS, Recharts  
 - **Backend:** Node.js, Express  
 - **Data Source:** Mock REST API (easily replaceable with Prometheus, CloudWatch, or other sources)  
---
+---
 ## CloudOps Dashboard
 <p align="center"><img width="825" height="1247" alt="image" src="https://github.com/user-attachments/assets/b92d6064-81b9-4c14-8eec-dd95f1792047" /></p>
 
