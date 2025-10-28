@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Fitness Studio - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <!-- Header Include -->
+    <div id="header"></div>
+        
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Home Page -->
+        <div id="home-page" class="page active">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="container text-center">
+                    <h1 class="hero-title">Transform Your Body & Mind</h1>
+                    <p class="hero-description">
+                        Join ABC Fitness Studio for expert-led Yoga, Pilates, and Kickboxing classes. 
+                        Your journey to wellness starts here.
+                    </p>
+                    <button class="btn-primary nav-btn" data-page="gallery">Shop Now</button>
+                </div>
+            </section>
+
+            <!-- Client Highlights -->
+            <section class="section bg-muted">
+                <div class="container">
+                    <h2 class="section-title text-dark">Why Choose ABC Fitness?</h2>
+                    <div class="grid grid-3">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="icon-box">
+                                    <i data-lucide="award" class="icon-blue"></i>
+                                </div>
+                                <div>
+                                    <h3 class="card-title">Expert Instructors</h3>
+                                    <p class="card-text">Certified professionals with years of experience</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="icon-box">
+                                    <i data-lucide="clock" class="icon-blue"></i>
+                                </div>
+                                <div>
+                                    <h3 class="card-title">Flexible Schedule</h3>
+                                    <p class="card-text">Classes from 6am to 8pm to fit your lifestyle</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="icon-box">
+                                    <i data-lucide="users" class="icon-blue"></i>
+                                </div>
+                                <div>
+                                    <h3 class="card-title">Community Focus</h3>
+                                    <p class="card-text">Join a supportive fitness community</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Promo Products -->
+            <section class="section bg-white">
+            <div class="container">
+                <h2 class="section-title text-dark">Featured Products</h2>
+                <div class="featured-products"></div>
+            </div>
+            </section>
+
+            <!-- Our Classes -->
+            <section class="section bg-secondary">
+                <div class="container">
+                    <h2 class="section-title text-light">Our Classes</h2>
+                    <div class="grid grid-3">
+                        <div class="category-card clickable nav-btn" data-page="gallery">
+                            <div class="category-image-wrapper">
+                                <img src="images/Client2_GroupYoga.png" 
+                                     alt="Yoga" 
+                                     class="category-image">
+                            </div>
+                            <div class="category-overlay">
+                                <h3 class="category-title">Yoga</h3>
+                                <p class="category-description">Find balance and flexibility</p>
+                            </div>
+                        </div>
+                        <div class="category-card clickable nav-btn" data-page="gallery">
+                            <div class="category-image-wrapper">
+                                <img src="images/Client2_GroupPilates.png" 
+                                     alt="Pilates" 
+                                     class="category-image">
+                            </div>
+                            <div class="category-overlay">
+                                <h3 class="category-title">Pilates</h3>
+                                <p class="category-description">Core strength and posture</p>
+                            </div>
+                        </div>
+                        <div class="category-card clickable nav-btn" data-page="gallery">
+                            <div class="category-image-wrapper">
+                                <img src="images/Client2_GroupKickboxing.png" 
+                                     alt="Kickboxing" 
+                                     class="category-image">
+                            </div>
+                            <div class="category-overlay">
+                                <h3 class="category-title">Kickboxing</h3>
+                                <p class="category-description">High-intensity cardio workout</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Shopping Benefits -->
+            <section class="section bg-white">
+                <div class="container">
+                    <h2 class="section-title text-dark">Shopping Benefits</h2>
+                    <div class="grid grid-3 max-width-4xl">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i data-lucide="check-circle" class="icon-blue"></i>
+                            </div>
+                            <h3 class="benefit-title">Quality Guaranteed</h3>
+                            <p class="benefit-text">Premium fitness equipment</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i data-lucide="truck" class="icon-blue"></i>
+                            </div>
+                            <h3 class="benefit-title">Free Shipping</h3>
+                            <p class="benefit-text">On orders over $50</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i data-lucide="shopping-bag" class="icon-blue"></i>
+                            </div>
+                            <h3 class="benefit-title">Easy Returns</h3>
+                            <p class="benefit-text">30-day return policy</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Gallery Page -->
+        <div id="gallery-page" class="page">
+            <div class="gallery-container">
+                <!-- Header -->
+                <div class="gallery-header">
+                    <h1 class="page-title">Classes & Equipment</h1>
+                    <button class="btn-cart" onclick="toggleCart()">
+                        <i data-lucide="shopping-cart"></i>
+                        View Cart
+                        <span id="cart-badge" class="cart-badge hidden">0</span>
+                    </button>
+                </div>
+
+                <!-- Products Grid -->
+                <div id="products-grid" class="products-grid">
+                </div>
+            </div>
+        </div>
+
+        <!-- About Us Page -->
+        <div id="about-page" class="page">
+            <!-- Hero Section -->
+            <section class="about-hero">
+                <div class="container text-center">
+                    <h1 class="page-title-light">About ABC Fitness Studio</h1>
+                    <p class="page-description">
+                        Your premier destination for Yoga, Pilates, and Kickboxing classes. 
+                        We're dedicated to helping you achieve your fitness goals in a supportive, 
+                        welcoming environment.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Our Story -->
+            <section class="section bg-muted">
+                <div class="container max-width-4xl">
+                    <h2 class="section-title text-dark">Our Story</h2>
+                    <div class="story-card">
+                        <p class="story-text">
+                            Founded in 2020, ABC Fitness Studio has been serving the community with 
+                            exceptional fitness classes and premium equipment. Our certified instructors 
+                            bring years of experience and passion to every session.
+                        </p>
+                        <p class="story-text">
+                            We believe fitness should be accessible, enjoyable, and transformative. 
+                            Whether you're a beginner or an experienced athlete, we have classes designed 
+                            to meet you where you are and help you reach your goals.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Business Hours & Contact -->
+            <section class="section bg-white">
+                <div class="container">
+                    <div class="info-grid">
+                        <!-- Business Hours -->
+                        <div class="info-card bg-secondary">
+                            <div class="info-header">
+                                <i data-lucide="clock" class="info-icon"></i>
+                                <h2 class="info-title">Business Hours</h2>
+                            </div>
+                            <div class="hours-list">
+                                <div class="hours-item">
+                                    <span class="hours-day">Monday - Friday</span>
+                                    <span class="hours-time">6:00 AM - 8:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="hours-day">Saturday</span>
+                                    <span class="hours-time">8:00 AM - 6:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="hours-day">Sunday</span>
+                                    <span class="hours-time">Closed</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Information -->
+                        <div class="info-card bg-accent">
+                            <h2 class="info-title">Contact Information</h2>
+                            <div class="contact-list">
+                                <div class="contact-item">
+                                    <div class="contact-icon-box">
+                                        <i data-lucide="map-pin" class="icon-blue"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="contact-label">Address</h3>
+                                        <p class="contact-value">123 Fitness Street, Wellness City, WC 12345</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="contact-icon-box">
+                                        <i data-lucide="phone" class="icon-blue"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="contact-label">Phone</h3>
+                                        <p class="contact-value">(555) 123-4567</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="contact-icon-box">
+                                        <i data-lucide="mail" class="icon-blue"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="contact-label">Email</h3>
+                                        <p class="contact-value">info@abcfitness.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Feedback Form -->
+            <section class="section bg-muted">
+                <div class="container max-width-3xl">
+                    <div class="form-container">
+                        <h2 class="form-title">Feedback & Custom Orders</h2>
+                        <p class="form-subtitle">Share your thoughts or request custom equipment packages</p>
+                        
+                        <form id="feedback-form" class="feedback-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name *</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Your full name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone (Optional)</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" placeholder="(555) 123-4567">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="type" class="form-label">Request Type *</label>
+                                <select id="type" name="type" class="form-select" required>
+                                    <option value="">Select a type</option>
+                                    <option value="feedback">General Feedback</option>
+                                    <option value="custom-order">Custom Equipment Order</option>
+                                    <option value="class-inquiry">Class Inquiry</option>
+                                    <option value="membership">Membership Question</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea id="message" name="message" rows="6" class="form-textarea" placeholder="Tell us more about your request..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-submit">
+                                <i data-lucide="send"></i>
+                                Submit Form
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    <!-- Community Page -->
+
+        <div id="custom-page" class="page">
+            <!-- Hero Section -->
+            <section class="about-hero">
+                <div class="container text-center">
+                    <h1 class="page-title-light">Our Community</h1>
+                    <p class="page-description">
+                        More than just a fitness studio - we're a community dedicated to wellness, 
+                        support, and making a positive impact together.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Customer Testimonials -->
+            <section class="section bg-muted">
+                <div class="container">
+                    <h2 class="section-title text-dark">What Our Members Say</h2>
+                    <div class="testimonials-grid">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div>
+                                    <h3 class="testimonial-name">Sarah Johnson</h3>
+                                    <p class="testimonial-date">October 15, 2025</p>
+                                </div>
+                                <div class="rating">
+                                    <i data-lucide="star" class="star filled"></i>
+                                    <i data-lucide="star" class="star filled"></i>
+                                    <i data-lucide="star" class="star filled"></i>
+                                    <i data-lucide="star" class="star filled"></i>
+                                    <i data-lucide="star" class="star filled"></i>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">
+                                "ABC Fitness has completely transformed my life! The instructors are amazing and the community is so supportive. I've never felt better!"
+                            </p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div>
+                                    <h3 class="testimonial-name">Mike Chen</h3>
+                                    <p class="testimonial-date">October 10, 2025</p>
+                                </div>
+                                <div class="rating">
+                                    <i data-lucide="star" class="star filled"></i>
+                                    <i data-lucide="star" class="star filled"></i>
+                                    <i data-lucide="star" class="star filled"></i>
+                                    <i data-lucide="star" class="star filled"></i>
+                                    <i data-lucide="star" class="star filled"></i>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">
+                                "Best kickboxing classes in town! Great workout and the energy is incredible. Highly recommend to anyone looking to get in shape."
+                            </p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div>
+                                    <h3 class="testimonial-name">Emily Rodriguez</h3>
+                                    <p class="testimonial-date">October 5, 2025</p>
+                                </div>
+                                <div class="rating">
+                                    <i data-lucide="star" class="star filled"></i>
+                                    <i data-lucide="star" class="star filled"></i>
+                                    <i data-lucide="star" class="star filled"></i>
+                                    <i data-lucide="star" class="star filled"></i>
+                                    <i data-lucide="star" class="star filled"></i>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">
+                                "The yoga classes here are peaceful and restorative. Perfect way to start my day. The instructors really care about proper form and technique."
+                            </p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div>
+                                    <h3 class="testimonial-name">David Park</h3>
+                                    <p class="testimonial-date">September 28, 2025</p>
+                                </div>
+                                <div class="rating">
+                                    <i data-lucide="star" class="star filled"></i>
+                                    <i data-lucide="star" class="star filled"></i>
+                                    <i data-lucide="star" class="star filled"></i>
+                                    <i data-lucide="star" class="star filled"></i>
+                                    <i data-lucide="star" class="star filled"></i>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">
+                                "Pilates sessions have improved my posture and core strength significantly. The small class sizes mean personalized attention."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Community Programs -->
+            <section class="section bg-white">
+                <div class="container">
+                    <h2 class="section-title text-dark">Community Programs</h2>
+                    <div class="grid grid-3">
+                        <div class="program-card">
+                            <div class="program-content">
+                                <div class="program-icon-box">
+                                    <i data-lucide="heart" class="icon-blue"></i>
+                                </div>
+                                <div class="program-info">
+                                    <h3 class="program-title">Wellness Workshop Series</h3>
+                                    <p class="program-date">Monthly</p>
+                                    <p class="program-description">
+                                        Free monthly workshops on nutrition, mental health, and holistic wellness for our community members.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="program-card">
+                            <div class="program-content">
+                                <div class="program-icon-box">
+                                    <i data-lucide="users" class="icon-blue"></i>
+                                </div>
+                                <div class="program-info">
+                                    <h3 class="program-title">Charity Fitness Challenge</h3>
+                                    <p class="program-date">Quarterly</p>
+                                    <p class="program-description">
+                                        Join our quarterly fitness challenges where proceeds go to local health and wellness initiatives.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="program-card">
+                            <div class="program-content">
+                                <div class="program-icon-box">
+                                    <i data-lucide="calendar" class="icon-blue"></i>
+                                </div>
+                                <div class="program-info">
+                                    <h3 class="program-title">Senior Fitness Program</h3>
+                                    <p class="program-date">Tuesdays & Thursdays</p>
+                                    <p class="program-description">
+                                        Specialized low-impact classes designed for seniors, promoting mobility, strength, and social connection.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Upcoming Events -->
+            <section class="section bg-muted">
+                <div class="container">
+                    <h2 class="section-title text-dark">Upcoming Events</h2>
+                    <div class="grid grid-3">
+                        <div class="event-card">
+                            <div class="event-image-wrapper">
+                                <img src="images/Client2_IndividualYoga.png" 
+                                        alt="Community Yoga in the Park" 
+                                        class="event-image">
+                            </div>
+                            <div class="event-content">
+                                <div class="event-date">
+                                    <i data-lucide="calendar"></i>
+                                    November 15, 2025
+                                </div>
+                                <h3 class="event-title">Community Yoga in the Park</h3>
+                                <p class="event-description">
+                                    Join us for a free outdoor yoga session open to all skill levels. Bring your mat and enjoy fitness in nature!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="event-card">
+                            <div class="event-image-wrapper">
+                                <img src="images/Client2_IndividualKickboxing.png" 
+                                        alt="Kickboxing Fundraiser" 
+                                        class="event-image">
+                            </div>
+                            <div class="event-content">
+                                <div class="event-date">
+                                    <i data-lucide="calendar"></i>
+                                    November 22, 2025
+                                </div>
+                                <h3 class="event-title">Kickboxing Fundraiser</h3>
+                                <p class="event-description">
+                                    High-energy kickboxing marathon to raise funds for local youth sports programs. All are welcome to participate!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="event-card">
+                            <div class="event-image-wrapper">
+                                <img src="images/Client2_IndividualPilates.png" 
+                                        alt="Holiday Wellness Fair" 
+                                        class="event-image">
+                            </div>
+                            <div class="event-content">
+                                <div class="event-date">
+                                    <i data-lucide="calendar"></i>
+                                    December 1, 2025
+                                </div>
+                                <h3 class="event-title">Holiday Wellness Fair</h3>
+                                <p class="event-description">
+                                    Celebrate the season with fitness demos, healthy cooking classes, and meet our instructor team.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="section bg-accent">
+                <div class="container max-width-4xl text-center">
+                    <h2 class="cta-title">Join Our Community Today</h2>
+                    <p class="cta-description">
+                        Become part of a supportive fitness family dedicated to health, 
+                        wellness, and making a difference in our community.
+                    </p>
+                    <div class="cta-buttons">
+                        <button class="btn-primary">View Class Schedule</button>
+                        <button class="btn-secondary">Contact Us</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Include -->
+    <div id="footer"></div>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal hidden">
+        <div class="modal-overlay" onclick="toggleCart()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Shopping Cart</h2>
+                <p class="modal-subtitle">Review your items before checkout</p>
+                <button class="modal-close" onclick="toggleCart()">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <div id="cart-items" class="modal-body">
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div id="cart-total" class="modal-total hidden">
+                <div class="total-row">
+                    <span>Total:</span>
+                    <span id="total-amount" class="total-amount">$0.00</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="clear-cart-btn" class="btn-danger" onclick="showClearDialog()" disabled>Clear Cart</button>
+                <button id="process-order-btn" class="btn-primary" onclick="processOrder()" disabled>Process Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Clear Cart Confirmation Dialog -->
+    <div id="clear-dialog" class="dialog hidden">
+        <div class="dialog-overlay" onclick="hideClearDialog()"></div>
+        <div class="dialog-content">
+            <h2 class="dialog-title">Clear Cart?</h2>
+            <p class="dialog-description">
+                Are you sure you want to remove all items from your cart? This action cannot be undone.
+            </p>
+            <div class="dialog-footer">
+                <button class="btn-secondary" onclick="hideClearDialog()">Cancel</button>
+                <button class="btn-danger" onclick="clearCart()">Clear Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Success Dialog -->
+    <div id="order-dialog" class="dialog hidden">
+        <div class="dialog-overlay" onclick="hideOrderDialog()"></div>
+        <div class="dialog-content">
+            <h2 class="dialog-title success">Order Successful! 🎉</h2>
+            <p class="dialog-description">
+                Thank you for your order! Your fitness equipment will be shipped within 2-3 business days. 
+                We've saved your order details for your records.
+            </p>
+            <div class="dialog-footer">
+                <button class="btn-primary" onclick="hideOrderDialog()">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Success Dialog -->
+    <div id="form-success-dialog" class="dialog hidden">
+        <div class="dialog-overlay" onclick="hideFormSuccessDialog()"></div>
+        <div class="dialog-content">
+            <h2 class="dialog-title success">Thank You! 🎉</h2>
+            <p class="dialog-description">
+                We've received your message and will get back to you within 24 hours. 
+                Your feedback helps us serve you better!
+            </p>
+            <div class="dialog-footer">
+                <button class="btn-primary" onclick="hideFormSuccessDialog()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden"></div>
+
+    <script>
+        // Initialize Lucide icons after DOM loads
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Newsletter -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="footer-text">Stay updated with our latest classes and offers</p>
+                    <form id="newsletter-form" class="newsletter-form">
+                        <input type="email" id="newsletter-email" placeholder="Your email" class="newsletter-input" required>
+                        <button type="submit" class="newsletter-btn">
+                            <i data-lucide="mail"></i>
+                            Subscribe
+                        </button>
+                    </form>
+                    <p id="subscribe-message" style="color: var(--accent-color); display: none; margin-top: 8px;">
+                    Thanks for subscribing!
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <nav>
+                        <ul class="footer-nav">
+                            <li><button data-page="home" class="footer-link">Home</button></li>
+                            <li><button data-page="gallery" class="footer-link">Gallery</button></li>
+                            <li><button data-page="about" class="footer-link">About Us</button></li>
+                            <li><button data-page="custom" class="footer-link">Community</button></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Social Media & Hours -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i data-lucide="facebook"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="twitter">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                    </div>
+                    <div class="footer-hours">
+                        <p>Mon-Fri: 6am - 8pm</p>
+                        <p>Sat: 8am - 6pm</p>
+                        <p>Sun: Closed</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                © 2025 ABC Fitness Studio. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+     <!-- Newsletter script -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const form = document.getElementById("newsletter-form");
+        const message = document.getElementById("subscribe-message");
+
+        if (form) {
+        form.addEventListener("submit", function(event) {
+            event.preventDefault(); // Stop reload or redirect
+            if (message) {
+            message.style.display = "block"; // Show success text
+            }
+            form.reset(); // Clear input
+        });
+        }
+    });
+    </script>
